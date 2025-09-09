@@ -40,6 +40,8 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, account }) {
       // 登录(account仅登录那一次有值)
       // Only on sign in (account only has a value at that time)
+      console.log('1111', token)
+      console.log('2222', account)
       if (account) {
         token.accessToken = account.access_token
 
@@ -53,7 +55,7 @@ export const authOptions: NextAuthOptions = {
         if (!userInfo || !userInfo.userId) {
           throw new Error('User information could not be saved or retrieved.');
         }
-
+        console.log('success')
         const planRes = await getUserSubscriptionStatus({ userId: userInfo.userId, defaultUser: userInfo })
         const fullUserInfo = {
           userId: userInfo.userId,
