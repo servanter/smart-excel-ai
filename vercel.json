@@ -1,5 +1,4 @@
 {
-  "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
-  "packageManager": "pnpm@10.x"
+  "buildCommand": "pnpm run build"
 }
