@@ -2,6 +2,10 @@
   "engines": {
     "node": "20.x"
   },
+  "overrides": {
+    "undici": "5.28.4",
+    "lemonsqueezy.ts>undici": "5.28.4"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
