@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "node": ">=22.0.0"
-  },
   "private": true,
   "scripts": {
     "dev": "next dev",
